@@ -1,0 +1,4 @@
+select usuario_id_usuario, login, nome_funcionario, data_venda, valor_total from venda, usuario, funcionario where funcionarios_id_funcionarios = id_funcionario and data_venda between '20/11/2015' and '30/11/2015';
+
+
+Select sum(valor_total) from venda where usuario_id_usuario = '2' and data_venda between '20/11/2015' and '30/11/2015'; 

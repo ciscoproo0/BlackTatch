@@ -1,0 +1,39 @@
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.Cache
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmBemVindo.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmCliente.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmFuncionario.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmEstoque.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmFornecedor.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmCadastrarModelo.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmVenda.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmRelatorio.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.SplashScreen.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmUsuario.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.csprojResolveAssemblyReference.cache
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmSobre.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\bin\Debug\Apresentacao.exe
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\bin\Debug\Apresentacao.pdb
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.exe
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\bin\Debug\Apresentacao.exe
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\bin\Debug\Apresentacao.pdb
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.csprojResolveAssemblyReference.cache
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmSobre.resources
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmCadastrarModelo.resources
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmEstoque.resources
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmBemVindo.resources
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmUsuario.resources
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.SplashScreen.resources
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmCliente.resources
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmFornecedor.resources
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmFuncionario.resources
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmRelatorio.resources
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.frmVenda.resources
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.cache
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.csproj.CoreCompileInputs.cache
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.exe
+C:\Users\Francisco\Desktop\Black Tatch - Final\BlackTatch\Apresentacao\obj\Debug\Apresentacao.pdb

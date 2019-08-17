@@ -1,0 +1,1 @@
+Select * from produto where modelo_descricao like '%null%' or id_produto like '%1%'

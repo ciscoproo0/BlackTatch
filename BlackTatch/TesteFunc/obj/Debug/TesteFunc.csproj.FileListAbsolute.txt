@@ -1,0 +1,8 @@
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\TesteFunc\bin\Debug\TesteFunc.exe.config
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\TesteFunc\bin\Debug\TesteFunc.exe
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\TesteFunc\bin\Debug\TesteFunc.pdb
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\TesteFunc\obj\Debug\TesteFunc.Form1.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\TesteFunc\obj\Debug\TesteFunc.Properties.Resources.resources
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\TesteFunc\obj\Debug\TesteFunc.csproj.GenerateResource.Cache
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\TesteFunc\obj\Debug\TesteFunc.exe
+C:\Users\Windows\Documents\Black Tatch\BlackTatch\TesteFunc\obj\Debug\TesteFunc.pdb

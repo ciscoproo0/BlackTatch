@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:4888/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:4888/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:4888/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AcessoADados.Compras" />
+      <xsd:import schemaLocation="http://localhost:4888/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/AcessoADados.Vendas" />
+      <xsd:import schemaLocation="http://localhost:4888/Service1.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/AcessoADados.Funcionarios" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_ConsultarFornecedorDataAccess_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFornecedorDataAccess" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarFornecedorDataAccess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFornecedorDataAccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarFornecedorNome_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFornecedorNome" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarFornecedorNome_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFornecedorNomeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarFornecedor_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarFornecedor" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarFornecedor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarFornecedorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ExcluirFornecedor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirFornecedor" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ExcluirFornecedor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirFornecedorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarFornecedor_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarFornecedor" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarFornecedor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarFornecedorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirFornecedor_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirFornecedor" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirFornecedor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirFornecedorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarClienteDataAccess_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarClienteDataAccess" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarClienteDataAccess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarClienteDataAccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ExcluirCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirCliente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ExcluirCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirCliente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarFuncionarioDataAccess_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFuncionarioDataAccess" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarFuncionarioDataAccess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFuncionarioDataAccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarFuncionarioNome_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFuncionarioNome" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarFuncionarioNome_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarFuncionarioNomeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ExcluirFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ExcluirFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExcluirFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarFuncionarioComissao_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarFuncionarioComissao" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarFuncionarioComissao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarFuncionarioComissaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirCompra_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirCompra" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirCompra_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirCompraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirItensCompra_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirItensCompra" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirItensCompra_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirItensCompraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarCompra_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarCompra" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarCompra_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarCompraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarCompraNoBanco_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCompraNoBanco" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarCompraNoBanco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCompraNoBancoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarCompraId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCompraId" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarCompraId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCompraIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarCompraDatas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCompraDatas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarCompraDatas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCompraDatasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarProdutoDataAccess_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarProdutoDataAccess" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarProdutoDataAccess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarProdutoDataAccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarProdutoModelo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarProdutoModelo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarProdutoModelo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarProdutoModeloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarProdutoId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarProdutoId" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarProdutoId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarProdutoIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarProduto_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarProduto" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarProduto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarProdutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarProdutoSoma_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarProdutoSoma" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarProdutoSoma_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarProdutoSomaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarProdutoSub_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarProdutoSub" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarProdutoSub_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarProdutoSubResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirProduto_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirProduto" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirProduto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirProdutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirVenda_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirVenda" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirVenda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirVendaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirItensVenda_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirItensVenda" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirItensVenda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirItensVendaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarVenda_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarVenda" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarVenda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarVendaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarVendaNoBanco_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVendaNoBanco" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarVendaNoBanco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVendaNoBancoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarVendaId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVendaId" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarVendaId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVendaIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarVendaDatas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVendaDatas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarVendaDatas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarVendaDatasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarUsuarioId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUsuarioId" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarUsuarioId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUsuarioIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarUsuarioLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUsuarioLogin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarUsuarioLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUsuarioLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarUsuarioNoBanco_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUsuarioNoBanco" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConsultarUsuarioNoBanco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarUsuarioNoBancoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarLogin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ValidarLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CadastrarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:CadastrarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CadastrarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CadastrarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AlterarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:AlterarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AlterarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AlterarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="ConsultarFornecedorDataAccess">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarFornecedorDataAccess" message="tns:IService1_ConsultarFornecedorDataAccess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarFornecedorDataAccessResponse" message="tns:IService1_ConsultarFornecedorDataAccess_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFornecedorNome">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarFornecedorNome" message="tns:IService1_ConsultarFornecedorNome_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarFornecedorNomeResponse" message="tns:IService1_ConsultarFornecedorNome_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarFornecedor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarFornecedor" message="tns:IService1_SelecionarFornecedor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarFornecedorResponse" message="tns:IService1_SelecionarFornecedor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirFornecedor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ExcluirFornecedor" message="tns:IService1_ExcluirFornecedor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ExcluirFornecedorResponse" message="tns:IService1_ExcluirFornecedor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarFornecedor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarFornecedor" message="tns:IService1_AtualizarFornecedor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarFornecedorResponse" message="tns:IService1_AtualizarFornecedor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirFornecedor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirFornecedor" message="tns:IService1_InserirFornecedor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirFornecedorResponse" message="tns:IService1_InserirFornecedor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarClienteDataAccess">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarClienteDataAccess" message="tns:IService1_ConsultarClienteDataAccess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarClienteDataAccessResponse" message="tns:IService1_ConsultarClienteDataAccess_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarCliente" message="tns:IService1_SelecionarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarClienteResponse" message="tns:IService1_SelecionarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ExcluirCliente" message="tns:IService1_ExcluirCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ExcluirClienteResponse" message="tns:IService1_ExcluirCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarCliente" message="tns:IService1_AtualizarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarClienteResponse" message="tns:IService1_AtualizarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirCliente" message="tns:IService1_InserirCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirClienteResponse" message="tns:IService1_InserirCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFuncionarioDataAccess">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarFuncionarioDataAccess" message="tns:IService1_ConsultarFuncionarioDataAccess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarFuncionarioDataAccessResponse" message="tns:IService1_ConsultarFuncionarioDataAccess_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFuncionarioNome">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarFuncionarioNome" message="tns:IService1_ConsultarFuncionarioNome_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarFuncionarioNomeResponse" message="tns:IService1_ConsultarFuncionarioNome_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarFuncionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarFuncionario" message="tns:IService1_SelecionarFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarFuncionarioResponse" message="tns:IService1_SelecionarFuncionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirFuncionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ExcluirFuncionario" message="tns:IService1_ExcluirFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ExcluirFuncionarioResponse" message="tns:IService1_ExcluirFuncionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarFuncionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarFuncionario" message="tns:IService1_AtualizarFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarFuncionarioResponse" message="tns:IService1_AtualizarFuncionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarFuncionarioComissao">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarFuncionarioComissao" message="tns:IService1_AtualizarFuncionarioComissao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarFuncionarioComissaoResponse" message="tns:IService1_AtualizarFuncionarioComissao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirFuncionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirFuncionario" message="tns:IService1_InserirFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirFuncionarioResponse" message="tns:IService1_InserirFuncionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirCompra">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirCompra" message="tns:IService1_InserirCompra_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirCompraResponse" message="tns:IService1_InserirCompra_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirItensCompra">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirItensCompra" message="tns:IService1_InserirItensCompra_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirItensCompraResponse" message="tns:IService1_InserirItensCompra_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarCompra">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarCompra" message="tns:IService1_SelecionarCompra_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarCompraResponse" message="tns:IService1_SelecionarCompra_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCompraNoBanco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarCompraNoBanco" message="tns:IService1_ConsultarCompraNoBanco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarCompraNoBancoResponse" message="tns:IService1_ConsultarCompraNoBanco_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCompraId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarCompraId" message="tns:IService1_ConsultarCompraId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarCompraIdResponse" message="tns:IService1_ConsultarCompraId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCompraDatas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarCompraDatas" message="tns:IService1_ConsultarCompraDatas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarCompraDatasResponse" message="tns:IService1_ConsultarCompraDatas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarProdutoDataAccess">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarProdutoDataAccess" message="tns:IService1_ConsultarProdutoDataAccess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarProdutoDataAccessResponse" message="tns:IService1_ConsultarProdutoDataAccess_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarProdutoModelo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarProdutoModelo" message="tns:IService1_ConsultarProdutoModelo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarProdutoModeloResponse" message="tns:IService1_ConsultarProdutoModelo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarProdutoId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarProdutoId" message="tns:IService1_ConsultarProdutoId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarProdutoIdResponse" message="tns:IService1_ConsultarProdutoId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarProduto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarProduto" message="tns:IService1_SelecionarProduto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarProdutoResponse" message="tns:IService1_SelecionarProduto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarProdutoSoma">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarProdutoSoma" message="tns:IService1_AtualizarProdutoSoma_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarProdutoSomaResponse" message="tns:IService1_AtualizarProdutoSoma_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarProdutoSub">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarProdutoSub" message="tns:IService1_AtualizarProdutoSub_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarProdutoSubResponse" message="tns:IService1_AtualizarProdutoSub_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirProduto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirProduto" message="tns:IService1_InserirProduto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirProdutoResponse" message="tns:IService1_InserirProduto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirVenda">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirVenda" message="tns:IService1_InserirVenda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirVendaResponse" message="tns:IService1_InserirVenda_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirItensVenda">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirItensVenda" message="tns:IService1_InserirItensVenda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirItensVendaResponse" message="tns:IService1_InserirItensVenda_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarVenda">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarVenda" message="tns:IService1_SelecionarVenda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarVendaResponse" message="tns:IService1_SelecionarVenda_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVendaNoBanco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarVendaNoBanco" message="tns:IService1_ConsultarVendaNoBanco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarVendaNoBancoResponse" message="tns:IService1_ConsultarVendaNoBanco_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVendaId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarVendaId" message="tns:IService1_ConsultarVendaId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarVendaIdResponse" message="tns:IService1_ConsultarVendaId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVendaDatas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarVendaDatas" message="tns:IService1_ConsultarVendaDatas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarVendaDatasResponse" message="tns:IService1_ConsultarVendaDatas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarUsuarioId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarUsuarioId" message="tns:IService1_ConsultarUsuarioId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarUsuarioIdResponse" message="tns:IService1_ConsultarUsuarioId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarUsuarioLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarUsuarioLogin" message="tns:IService1_ConsultarUsuarioLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarUsuarioLoginResponse" message="tns:IService1_ConsultarUsuarioLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarUsuarioNoBanco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConsultarUsuarioNoBanco" message="tns:IService1_ConsultarUsuarioNoBanco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConsultarUsuarioNoBancoResponse" message="tns:IService1_ConsultarUsuarioNoBanco_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ValidarLogin" message="tns:IService1_ValidarLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ValidarLoginResponse" message="tns:IService1_ValidarLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CadastrarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CadastrarUsuario" message="tns:IService1_CadastrarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CadastrarUsuarioResponse" message="tns:IService1_CadastrarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AlterarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AlterarUsuario" message="tns:IService1_AlterarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AlterarUsuarioResponse" message="tns:IService1_AlterarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarUsuario" message="tns:IService1_SelecionarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarUsuarioResponse" message="tns:IService1_SelecionarUsuario_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultarFornecedorDataAccess">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarFornecedorDataAccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFornecedorNome">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarFornecedorNome" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarFornecedor">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarFornecedor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirFornecedor">
+      <soap:operation soapAction="http://tempuri.org/IService1/ExcluirFornecedor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarFornecedor">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarFornecedor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirFornecedor">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirFornecedor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarClienteDataAccess">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarClienteDataAccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarCliente">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirCliente">
+      <soap:operation soapAction="http://tempuri.org/IService1/ExcluirCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarCliente">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirCliente">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFuncionarioDataAccess">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarFuncionarioDataAccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarFuncionarioNome">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarFuncionarioNome" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarFuncionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluirFuncionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/ExcluirFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarFuncionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarFuncionarioComissao">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarFuncionarioComissao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirFuncionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirCompra">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirCompra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirItensCompra">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirItensCompra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarCompra">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarCompra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCompraNoBanco">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarCompraNoBanco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCompraId">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarCompraId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCompraDatas">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarCompraDatas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarProdutoDataAccess">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarProdutoDataAccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarProdutoModelo">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarProdutoModelo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarProdutoId">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarProdutoId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarProduto">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarProduto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarProdutoSoma">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarProdutoSoma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarProdutoSub">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarProdutoSub" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirProduto">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirProduto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirVenda">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirVenda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirItensVenda">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirItensVenda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarVenda">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarVenda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVendaNoBanco">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarVendaNoBanco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVendaId">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarVendaId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarVendaDatas">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarVendaDatas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarUsuarioId">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarUsuarioId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarUsuarioLogin">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarUsuarioLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarUsuarioNoBanco">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConsultarUsuarioNoBanco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarLogin">
+      <soap:operation soapAction="http://tempuri.org/IService1/ValidarLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CadastrarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IService1/CadastrarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlterarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IService1/AlterarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:4888/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
